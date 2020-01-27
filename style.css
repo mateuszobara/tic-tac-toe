@@ -1,0 +1,42 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    width: 44rem;
+    height: 44rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.box {
+    background-color: #dfdfdf;
+    border: 2px solid #999;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #cdcdcd;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 31.25%;
+    }
+}
