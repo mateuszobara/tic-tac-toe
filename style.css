@@ -29,6 +29,10 @@ html {
     background-color: #dfdfdf;
     border: 2px solid #999;
     cursor: pointer;
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box:hover {
